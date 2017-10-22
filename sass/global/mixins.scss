@@ -1,0 +1,38 @@
+@mixin font-mixin($family, $style, $map) {
+	$dir-name: "../fonts/";
+	@each $weight, $path in $map {
+		@font-face {
+			font-family: $family;
+			font-style: $style;
+			font-weight: $weight;
+			src: local($family),
+					url($dir-name + $path + ".woff2") format("woff2"),
+					url($dir-name + $path + ".woff") format("woff");
+		}
+	}
+}
+@mixin font(
+	$font-family: $font-family--base,
+	$font-size: 100%,
+	$line-height: 1.2,
+	$font-weight: 400,
+	$color: #000000
+	) {
+	font-family: $font-family;
+	font-size: $font-size;
+	line-height: $line-height;
+	font-weight: $font-weight;
+	color: $color;
+}
+@mixin inline-block($align: top) {
+	display: inline-block;
+	vertical-align: $align;
+}
+@mixin no-indents {
+	margin: 0;
+	padding: 0;
+}
+@mixin no-list-style {
+	@include no-indents;
+	list-style: none;
+}

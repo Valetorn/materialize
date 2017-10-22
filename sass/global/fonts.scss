@@ -1,0 +1,3 @@
+@include font-mixin ($font-name, normal, $font-map);
+@include font-mixin ($font-name, bold, $font-map--bold);
+@include font-mixin ($font-name-secondary, bold, $font-map-secondary);

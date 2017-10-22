@@ -1,0 +1,43 @@
+/*font*/
+$font-name: "helvetica-neue";
+$font-name-secondary: "georgia";
+$font-map: (
+	300:"helvetica-neue-light",
+	400:"helvetica-neue-regular"
+);
+$font-map--bold: (
+	700:"helvetica-neue-bold"
+);
+$font-map-secondary: (
+	700:"georgia-bold"
+);
+$font-family--base: $font-name, sans-serif;
+$font-family--secodary: $font-name-secondary, sans-serif;
+/*colors*/
+$color-red: #de2b24;
+$color-red--light: #eb807c;
+$color-white: #ffffff;
+$color-yellow: #f8cd53;
+$color-gray: #f0f2f4;
+$color-gray--dark: #ebedee;
+$color-gray--darker: #424242;
+$color-light-blue: #1287bf;
+$color-black: #000000;
+/*btn*/
+$btn-major--bg: $color-red;
+$btn-major--color: $color-white;
+$btn-minor--bg: $color-yellow;
+$btn-minor--color: $color-white;
+/*blocks*/
+$header-top--bg: $color-gray;
+$header-top--border: 1px solid $color-gray--dark;
+
+$contacts--color: $color-gray--darker;
+$contacts-contact--border: $header-top--border;
+$contacts-facebook--bg: $color-light-blue;
+$contacts-facebook--color: $color-white;
+
+$nav-link--color: $color-black;
+$nav-link--color-active: $color-red--light;
+$nav-link-after--color: $nav-link--color;
+

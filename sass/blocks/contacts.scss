@@ -1,0 +1,38 @@
+.contacts {
+	text-align: right;
+
+	&__contact {
+		@include inline-block();
+		padding: 10px 10px 8px;
+		color: $contacts--color;
+		transition: 0.3s;
+
+		&:first-child {
+			margin-right: 8px;
+			padding-right: 18px;
+			border-right: $contacts-contact--border;
+		}
+
+		&--facebook {
+			margin: 6px 0;
+			padding: 5px 8px 1px;
+			color: $contacts-facebook--color;
+			border-radius: 3px;
+			background-color: $contacts-facebook--bg;
+		}
+
+		&:hover {
+			color: lighten($color: $contacts--color, $amount: 20%);
+		}
+	}
+
+	&__icon {
+		margin-right: 7px;
+		font-size: 1.5rem;
+		vertical-align: middle;
+
+		&--email {
+			font-size: 1.2rem;
+		}
+	}
+}

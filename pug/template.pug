@@ -1,0 +1,24 @@
+include modules/head
+<!DOCTYPE html>
+html(lang="en")
+
+	block head
+		+head ({
+			"title": "Materialize",
+			"author": "Durin Vladislav",
+			"description": "new Site",
+			"keywords": "css, html, pug, scss"
+		})
+
+	body
+		block header
+			include modules/header
+
+
+		block main
+
+		block footer
+			footer
+
+		block scripts
+			script(src="js/script.js")

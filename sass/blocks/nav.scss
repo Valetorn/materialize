@@ -1,0 +1,30 @@
+.nav {
+	@include inline-block();
+	padding-top: 7px;
+	margin-right: 15px;
+
+	&__link {
+		@include font($font-family--base, 1rem, 1.2, 700, $nav-link--color);
+		@include inline-block();
+		padding: 10px;
+		text-decoration: none;
+		text-transform: capitalize;
+		transition: 0.3s;
+
+		&:hover, &--active {
+			color: $nav-link--color-active;
+		}
+
+		&:not(:last-child) {
+			&::after {
+				content: '';
+				@include inline-block(middle);
+				width: 5px;
+				height: 5px;
+				margin-left: 15px;
+				border-radius: 50%;
+				background-color: $nav-link-after--color;
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+.btn {
+	@include inline-block();
+	border-radius: 3px;
+	padding: 10px 22px 7px;
+	text-decoration: none;
+
+	&--red {
+		background-color: $btn-major--bg;
+		color: $btn-major--color;
+		transition: 0.3s;
+
+		&:hover {
+			background-color: lighten($color: $btn-major--bg, $amount: 7%);
+		}
+	}
+
+	&--yellow {
+		background-color: $btn-minor--bg;
+		color: $btn-minor--color;
+	}
+}

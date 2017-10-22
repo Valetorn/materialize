@@ -1,0 +1,33 @@
+html {
+	height: 100%;
+	box-sizing: border-box;
+}
+
+*, *::after, *::before {
+	box-sizing: inherit;
+}
+
+body {
+	@include no-indents;
+	@include font;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6 {
+	@include no-indents;
+}
+p {
+	@include no-indents;
+}
+figure {
+	@include no-indents;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+footer {
+	flex: 0 0 auto;
+}
