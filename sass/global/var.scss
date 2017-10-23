@@ -23,6 +23,8 @@ $color-gray--dark: #ebedee;
 $color-gray--darker: #424242;
 $color-light-blue: #1287bf;
 $color-black: #000000;
+/*icons*/
+$icon-hero--bg: url("../img/hero.jpg");
 /*btn*/
 $btn-major--bg: $color-red;
 $btn-major--color: $color-white;
@@ -41,3 +43,7 @@ $nav-link--color: $color-black;
 $nav-link--color-active: $color-red--light;
 $nav-link-after--color: $nav-link--color;
 
+$hero--color: $color-white;
+$hero--bg: $color-gray;
+$hero-about--color: $color-white;
+$hero-title--color: $color-white;

@@ -2718,6 +2718,7 @@ template {
 
 /*font*/
 /*colors*/
+/*icons*/
 /*btn*/
 /*blocks*/
 @font-face {
@@ -2847,6 +2848,8 @@ footer {
   .btn--yellow {
     background-color: #f8cd53;
     color: #ffffff; }
+  .btn--text-uppercase {
+    text-transform: uppercase; }
 
 .main-header__top {
   background-color: #f0f2f4;
@@ -2899,7 +2902,7 @@ footer {
   margin-right: 15px; }
   .nav__link {
     font-family: "helvetica-neue", sans-serif;
-    font-size: 1rem;
+    font-size: 100%;
     line-height: 1.2;
     font-weight: 700;
     color: #000000;
@@ -2920,3 +2923,33 @@ footer {
       margin-left: 15px;
       border-radius: 50%;
       background-color: #000000; }
+
+.hero {
+  min-height: 59px;
+  padding: 174px 0;
+  text-align: center;
+  color: #ffffff;
+  background: url("../img/hero.jpg") center/cover no-repeat;
+  background-color: #f0f2f4; }
+  .hero__about {
+    font-family: "helvetica-neue", sans-serif;
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 700;
+    color: #ffffff; }
+  .hero__title {
+    font-family: "helvetica-neue", sans-serif;
+    font-size: 1.875rem;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 27px; }
+  .hero__btn {
+    font-family: "helvetica-neue", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 21px 41px;
+    border-radius: 8px;
+    letter-spacing: 1px; }

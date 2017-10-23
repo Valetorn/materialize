@@ -4,7 +4,7 @@
 	margin-right: 15px;
 
 	&__link {
-		@include font($font-family--base, 1rem, 1.2, 700, $nav-link--color);
+		@include font($font-family--base, $font-weight: 700);
 		@include inline-block();
 		padding: 10px;
 		text-decoration: none;

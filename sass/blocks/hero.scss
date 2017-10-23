@@ -1,0 +1,24 @@
+.hero {
+	min-height: 59px;
+	padding: 174px 0;
+	text-align: center;
+	color: $hero--color;
+	background: $icon-hero--bg center/cover no-repeat;
+	background-color: $hero--bg;
+
+	&__about {
+		@include font($font-family--base, 3rem, 1, 700, $hero-about--color);
+	}
+
+	&__title {
+		@include font($font-family--base, 1.875rem, $font-weight: 300, $color: $hero-title--color);
+		margin-bottom: 27px;
+	}
+
+	&__btn {
+		@include font($font-family--base, 1.5rem, $font-weight: 700, $color: $btn-minor--color);
+		padding: 21px 41px;
+		border-radius: 8px;
+		letter-spacing: 1px;
+	}
+}

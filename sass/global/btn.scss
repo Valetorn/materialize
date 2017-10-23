@@ -18,4 +18,8 @@
 		background-color: $btn-minor--bg;
 		color: $btn-minor--color;
 	}
+
+	&--text-uppercase {
+		text-transform: uppercase;
+	}
 }
