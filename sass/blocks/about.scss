@@ -1,0 +1,25 @@
+.about {
+	padding: 99px 0 105px 0;
+
+	&__list {
+		@include no-list-style;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding: 0 50px;
+	}
+
+	&__item {
+		width: 25%;
+	}
+
+	&__header {
+		@include font($font-family--base, 1.375rem, $font-weight: 700, $color: $about-header--color);
+		margin: 0 0 12px 0;
+
+	}
+
+	&__description {
+		@include font($font-size: 0.875rem, $line-height: 1.5, $color: $about-description--color);
+	}
+}
