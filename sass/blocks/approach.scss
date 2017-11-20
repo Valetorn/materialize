@@ -1,0 +1,81 @@
+.approach {
+	padding: 86px 0 94px;
+	background-color: $approach--bg;
+
+	&__list {
+		@include no-list-style;
+		counter-reset: count;
+	}
+
+	&__item {
+		margin-bottom: 40px;
+		border-radius: 5px;
+		box-shadow: -1px -1px 10px 1px rgba(214, 214, 214, 1);
+		color: $approach-item--color;
+		background-color: $approach-item--bg;
+
+		&:nth-child(2n) {
+			display: flex;
+			flex-direction: row-reverse;
+			text-align: right;
+
+			.approach__text {
+				padding: 70px 90px;
+			}
+
+			.approach__step {
+				right: auto;
+				left: -52px;
+			}
+		}
+	}
+
+	&__image {
+		@include inline-block ();
+		position: relative;
+		max-width: 340px;
+		max-height: 236px;
+
+		img {
+			display: block;
+		}
+	}
+
+	&__step {
+		@include center-y;
+		right: -58px;
+		width: 103px;
+		height: 103px;
+		padding-top: 10px;
+		border-radius: 5px;
+		border: $approach-step--border;
+		text-align: center;
+		font-size: 1.25rem;
+		background-color: $approach-step--bg;
+		color: $approach-step--color;
+
+		&::before {
+			@include font($font-family--secodary, 3rem, 1, 700, inherit);
+			content: counter(count);
+			counter-increment: count;
+			display: block;
+		}
+	}
+
+	&__title {
+		margin-bottom: 6px;
+		@include font($font-family--secodary, 1.125rem, inherit, 700, inherit);
+	}
+
+	&__text {
+		@include inline-block ();
+		width: 64%;
+		padding: 70px 70px 55px 90px;
+		font-size: 0.875rem;
+	}
+
+	&__description {
+		margin: 0;
+		line-height: 1.5;
+	}
+}

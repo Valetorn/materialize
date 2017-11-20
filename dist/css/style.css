@@ -3028,3 +3028,78 @@ footer {
     line-height: 1.5;
     font-weight: 400;
     color: #5c5c5c; }
+
+.approach {
+  padding: 86px 0 94px;
+  background-color: #f3f3f3; }
+  .approach__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: count; }
+  .approach__item {
+    margin-bottom: 40px;
+    border-radius: 5px;
+    box-shadow: -1px -1px 10px 1px #d6d6d6;
+    color: #424242;
+    background-color: #ffffff; }
+    .approach__item:nth-child(2n) {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+              flex-direction: row-reverse;
+      text-align: right; }
+      .approach__item:nth-child(2n) .approach__text {
+        padding: 70px 90px; }
+      .approach__item:nth-child(2n) .approach__step {
+        right: auto;
+        left: -52px; }
+  .approach__image {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    max-width: 340px;
+    max-height: 236px; }
+    .approach__image img {
+      display: block; }
+  .approach__step {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: -58px;
+    width: 103px;
+    height: 103px;
+    padding-top: 10px;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    text-align: center;
+    font-size: 1.25rem;
+    background-color: #de2b24;
+    color: #ffffff; }
+    .approach__step::before {
+      font-family: "georgia", sans-serif;
+      font-size: 3rem;
+      line-height: 1;
+      font-weight: 700;
+      color: inherit;
+      content: counter(count);
+      counter-increment: count;
+      display: block; }
+  .approach__title {
+    margin-bottom: 6px;
+    font-family: "georgia", sans-serif;
+    font-size: 1.125rem;
+    line-height: inherit;
+    font-weight: 700;
+    color: inherit; }
+  .approach__text {
+    display: inline-block;
+    vertical-align: top;
+    width: 64%;
+    padding: 70px 70px 55px 90px;
+    font-size: 0.875rem; }
+  .approach__description {
+    margin: 0;
+    line-height: 1.5; }

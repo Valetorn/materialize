@@ -19,6 +19,7 @@ $color-red--light: #eb807c;
 $color-white: #ffffff;
 $color-yellow: #f8cd53;
 $color-gray: #f0f2f4;
+$color-gray--light: #f3f3f3;
 $color-gray--dark: #ebedee;
 $color-gray--darker: #424242;
 $color-light-blue: #1287bf;
@@ -53,3 +54,14 @@ $about-header--color: $color-gray--darker;
 $about-description--color: $color-black--light;
 
 $title-line--bg: $color-gray--darker;
+
+$approach--bg: $color-gray--light;
+$approach-item--color: $color-gray--darker;
+$approach-item--bg: $color-white;
+$approach-step--border: 2px solid $color-white;
+$approach-step--bg: $color-red;
+$approach-step--color: $color-white;
+
+
+
+
