@@ -1,0 +1,17 @@
+section.work
+	- var works = [{image: '/img/work-1.jpg', description: 'Facebook marketing'}, {image: '/img/work-2.jpg', description: 'Landing page'	}, {image: '/img/work-3.jpg', description: 'Landing page'}, {image: '/img/work-4.jpg', description: 'Facebook marketing'}];
+
+	.container
+		+title ("Our Approch", "We are added our featured works bellow")
+
+		ul.work__list
+
+			each work in works
+				li.work__item.work__item--name
+					.work__name Project Name
+					.work__description= work.description
+
+				li.work__item
+					figure.work__picture
+						img(src= work.image, alt="This is photo of our work")
+

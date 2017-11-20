@@ -2871,20 +2871,21 @@ footer {
 
 .title {
   margin-bottom: 65px;
-  text-align: center; }
+  text-align: center;
+  color: inherit; }
   .title__header {
     font-family: "helvetica-neue", sans-serif;
     font-size: 2.25rem;
     line-height: 1;
     font-weight: 400;
-    color: #000000;
+    color: inherit;
     margin: 0; }
   .title__text {
     font-family: "helvetica-neue", sans-serif;
     font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 300;
-    color: #000000; }
+    color: inherit; }
   .title--with-bottom-line {
     position: relative; }
     .title--with-bottom-line::after {
@@ -3103,3 +3104,47 @@ footer {
   .approach__description {
     margin: 0;
     line-height: 1.5; }
+
+.work {
+  padding: 110px 0;
+  background-color: #de2b24;
+  color: #ffffff; }
+  .work__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+            justify-content: center; }
+  .work__item {
+    width: 256px;
+    height: 255px;
+    color: #ffffff;
+    font-weight: 700;
+    background-color: #f35e59; }
+    .work__item--name {
+      position: relative;
+      padding: 130px 40px 75px 40px;
+      text-align: center; }
+      .work__item--name::before {
+        background-image: url(../img/sprite.png);
+        background-position: -66px -81px;
+        width: 36px;
+        height: 37px;
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+        content: '';
+        top: 74px; }
+  .work__name {
+    font-size: 1.625rem; }
+  .work__description {
+    font-size: 1rem; }
+  .work__picture img {
+    width: 100%;
+    height: 100%; }
+  .work .title--with-bottom-line::after {
+    background-color: #ffffff; }

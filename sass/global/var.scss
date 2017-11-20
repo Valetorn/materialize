@@ -16,6 +16,7 @@ $font-family--secodary: $font-name-secondary, sans-serif;
 /*colors*/
 $color-red: #de2b24;
 $color-red--light: #eb807c;
+$color-pink: #f35e59;
 $color-white: #ffffff;
 $color-yellow: #f8cd53;
 $color-gray: #f0f2f4;
@@ -61,6 +62,11 @@ $approach-item--bg: $color-white;
 $approach-step--border: 2px solid $color-white;
 $approach-step--bg: $color-red;
 $approach-step--color: $color-white;
+
+$work--bg: $color-red;
+$work--color: $color-white;
+$work-item--bg: $color-pink;
+$work-item--color: $color-white;
 
 
 
