@@ -21,11 +21,13 @@ $color-white: #ffffff;
 $color-yellow: #f8cd53;
 $color-gray: #f0f2f4;
 $color-gray--light: #f3f3f3;
+$color-gray--darker-light: #d8d8d8;
 $color-gray--dark: #ebedee;
 $color-gray--darker: #424242;
 $color-light-blue: #1287bf;
 $color-black: #000000;
 $color-black--light: #5c5c5c;
+$color-black--lighter: #828282;
 /*icons*/
 $icon-hero--bg: url("../img/hero.jpg");
 /*btn*/
@@ -67,6 +69,13 @@ $work--bg: $color-red;
 $work--color: $color-white;
 $work-item--bg: $color-pink;
 $work-item--color: $color-white;
+
+$form-section--bg: $color-light-blue;
+$form--color: $color-black--lighter;
+$form--bg: $color-white;
+$form-close-button--color: $color-white;
+$form-close-button--bg: $color-red;
+$form-input--border: 1px solid $color-gray--darker-light;
 
 
 

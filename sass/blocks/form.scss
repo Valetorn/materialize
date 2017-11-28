@@ -1,0 +1,113 @@
+.form-section {
+	padding: 100px 0 110px 0;
+	color: #ffffff;
+	background-color: $form-section--bg;
+
+	.title {
+		margin-bottom: 12px;
+
+		&__header {
+			font-size: 2.25rem;
+		}
+
+		&__text {
+			font-size: 1.25rem;
+		}
+
+		&--with-bottom-line {
+			&::after {
+				display: none;
+			}
+		}
+	}
+
+	.btn-down {
+		position: relative;
+		margin: auto auto 20px;
+		width: 65px;
+		height: 65px;
+		border: 2px solid #ffffff;
+		border-radius: 50%;
+	}
+
+	.arrow-down {
+		@include center-xy;
+
+		.fa {
+			color: #ffffff;
+			font-size: 2.5rem;
+		}
+	}
+}
+
+.form {
+	position: relative;
+	width: 67%;
+	margin: auto;
+	padding: 50px 50px 66px 50px;
+	border-radius: 3px;
+	color: $form--color;
+	text-align: center;
+	background-color: $form--bg;
+
+	&::before {
+		@include center-x;
+		content: '';
+		top: -59px;
+		border: 30px solid transparent;
+		border-bottom: 30px solid #ffffff;
+	}
+
+	&__close-button {
+		position: absolute;
+		top: -22px;
+		right: -16px;
+		width: 50px;
+		height: 50px;
+		border: 2px solid #ffffff;
+		border-radius: 50%;
+		text-align: center;
+		font-size: 2rem;
+		color: $form-close-button--color;
+		background-color: $form-close-button--bg;
+		transition: 0.3s;
+
+		&:hover {
+			background-color: lighten($color: $form-close-button--bg, $amount: 10%);
+		}
+	}
+
+	&__text {
+		margin-bottom: 33px;
+		font-size: 0.9375rem;
+		line-height: 1.5;
+	}
+
+	&__fields {
+		margin-bottom: 36px;
+	}
+
+	&__input {
+		width: 76%;
+		display: block;
+		margin: auto auto 8px auto;
+		padding: 18px 20px;
+		border: $form-input--border;
+		border-radius: 3px;
+		font-size: 0.875rem;
+
+		&:focus {
+			box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.5);
+		}
+	}
+
+	.btn {
+		padding: 15px 30px;
+		border: none;
+	}
+}
+
+.form-container {
+	padding-top: 30px;
+}
+
